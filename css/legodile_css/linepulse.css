@@ -1,0 +1,34 @@
+.pulsing-line {
+    width: 100%;          /* Full width of the container */
+    height: 10px;          /* Thickness of the line */
+    background-color: rgb(71, 176, 247);  /* Base color of the line (blue) */
+    position: relative;
+    overflow: hidden;
+}
+
+.pulsing-line::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;            /* Start at the center */
+    width: 100%;
+    height: 100%;
+    background-color: rgba(173, 216, 230, 0.5);  /* Light blue pulse color */
+    transform: translateX(-50%);
+    animation: pulse 4s infinite;  /* Animation of 2 seconds repeating infinitely */
+}
+
+@keyframes pulse {
+    0% {
+        transform: translateX(-50%) scaleX(0);
+        opacity: 1;
+    }
+    50% {
+        transform: translateX(-50%) scaleX(1);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateX(-50%) scaleX(0);
+        opacity: 1;
+    }
+}

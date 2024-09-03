@@ -1,0 +1,221 @@
+#logo{
+  margin-left:39%; 
+  margin-right:-25%; 
+  text-align: center; 
+  border-radius: 50%; 
+  width: 300px; 
+  height: 300px;
+  box-shadow: 0px 10px 25px -10px rgba(0,0,0,0.8);
+}
+
+h1{
+  color: white;
+  text-align: center;
+}
+
+/*Page Gradient*/
+
+#slide1 {
+  background: linear-gradient(#00a1de, #0085c7); 
+}
+
+#slide2 {
+  background: linear-gradient(#0085c7, #00579c);
+}
+
+#slide3 {
+  background: linear-gradient(#00579c, #003866); 
+}
+
+#slide4 {
+  background: linear-gradient(#003866, #000000); 
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/*Grid section*/
+
+.grid-container {
+  margin-left: 5%;
+  margin-right: 5%;
+  display: grid;
+  grid-template-areas:
+      "top-left top-center top-right"
+      "middle-left image-container middle-right"
+      "bottom-left bottom-center bottom-right";
+  grid-template-rows: 150px 300px 125px;
+  grid-template-columns: 1fr 3fr 1fr;
+  gap: 10px; /* Adjust gap as needed */
+  height: 100vh; /* Full viewport height */
+  padding: 10px;
+  color: white;
+  font-weight: 530;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.grid-item {
+  background: linear-gradient(90deg, transparent, rgba(34, 153, 238, 0.3), transparent);
+  background-color: #000000; /* Light background for text areas */
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.top-left { grid-area: top-left; }
+.top-center { grid-area: top-center; }
+.top-right { grid-area: top-right; }
+.middle-left { grid-area: middle-left; }
+.middle-right { grid-area: middle-right; }
+.bottom-left { grid-area: bottom-left; }
+.bottom-center { grid-area: bottom-center; }
+.bottom-right { grid-area: bottom-right; }
+
+/*Download section*/
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.card {
+  background-color: #2a2d3e;
+  border-radius: 15px;
+  padding: 20px;
+  width: 300px;
+  color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.icon img {
+  width: 50px;
+}
+
+.card h2 {
+  margin-top: 10px;
+  font-size: 1.5em;
+  color: #ffffff;
+}
+
+.card h3 {
+  font-size: 1.2em;
+  color: #88f389;
+  margin: 10px 0;
+}
+
+.card p {
+  font-size: 0.9em;
+  color: #c0c0c0;
+}
+
+.button-group {
+  margin-top: 20px;
+}
+
+.button-group a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 5px;
+  display: inline-block;
+}
+
+.download {
+  background-color: #2a3d5e;
+}
+
+.learn-more {
+  background-color: #459bff;
+}
+
+/*Form section*/
+
+/*Subscription section*/
+
+.newsletter-subscribe {
+  color:#0085c7;
+  padding:50px 0;
+  text-align: center;
+}
+
+.newsletter-subscribe p {
+  color:white;
+  line-height:1.5;
+}
+
+.newsletter-subscribe h2 {
+  font-size:24px;
+  font-weight:bold;
+  margin-bottom:15px;
+  line-height:1.5;
+  padding-top:0;
+  margin-top:0;
+  color:#00579c;
+}
+
+.newsletter-subscribe .intro {
+  font-size:16px;
+  max-width:800px;
+  margin:0 auto 25px;
+  color: white;
+}
+
+.newsletter-subscribe .intro p {
+  margin-bottom:35px;
+  color: white;
+}
+
+.newsletter-subscribe form {
+  justify-content:center;
+}
+
+.newsletter-subscribe form .form-control {
+  background:#ffffff;
+  border:none;
+  border-radius:3px;
+  box-shadow:none;
+  outline:none;
+  color:inherit;
+  text-indent:9px;
+  height:45px;
+  margin-right:10px;
+  min-width:250px;
+}
+
+.newsletter-subscribe form .btn {
+  padding:16px 32px;
+  border:none;
+  background:none;
+  box-shadow:none;
+  text-shadow:#000000;
+  opacity:0.9;
+  text-transform:uppercase;
+  font-weight:bold;
+  font-size:13px;
+  letter-spacing:0.4px;
+  line-height:1;
+}
+
+.newsletter-subscribe form .btn:hover {
+  opacity:1;
+}
+
+.newsletter-subscribe form .btn:active {
+  transform:translateY(1px);
+}
+
+.newsletter-subscribe form .btn-primary {
+  background-color:#00a1de!important;
+  color:#fff;
+  text-shadow: #000000;
+  outline:none !important;
+}
